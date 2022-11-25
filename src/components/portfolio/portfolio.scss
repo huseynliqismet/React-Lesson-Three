@@ -1,0 +1,136 @@
+.portfolio{
+    .section-title{
+        span{
+           
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            line-height: 18px;
+            font-size: 16px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            display: inline-block;
+            background: linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, #FD4766 79.69%);
+            background-clip: inherit;
+        }
+        h2{
+            font-size: 50px;
+            font-weight: 600;
+            line-height: 62px;
+            margin-bottom: 20px;
+            color:#1f1f25;
+        }
+        p{
+            font-size: 18px;
+            line-height: 30px;
+            color: grey;
+        }
+    }
+    .single-portfolio{
+ margin-bottom: 20px;
+        .portfolio2{
+    width: 100%;
+    padding-top: 35%;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+  
+
+
+
+            .thumbnail-inner{
+                &:hover{
+                    .thumbnail-image{
+                        transform: scale(1.2);
+                        &::after{
+                            opacity: 99;
+                        }
+                    }
+            
+                }
+         
+&::before{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 109%;
+    height: 85%;
+    display: block;
+    z-index: 1;
+    content: "";
+    background: linear-gradient(to bottom, rgba(137, 126, 126, 0), rgba(31, 29, 29, 0.75) 100%);
+    cursor: pointer;
+}
+            .thumbnail-image{
+                
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-size: cover;
+                background-position: center;
+                border-radius: 5px;
+                background-color: #0a0a0a;
+        transition: 0.4s ease-in-out;
+        overflow: hidden;
+                z-index: 4;
+                &::after{
+                    content: "";
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(180deg, transparent, rgb(245, 7, 7));
+    height: 70%;
+    position: absolute;
+    width: 109.5%;
+    z-index: 1;
+    transition: 0.4s;
+    opacity: 0;
+                }
+            }
+        }
+        .content{
+            position: absolute;
+            left: 40px;
+            bottom: 20px;
+            color: white;
+            z-index: 999;
+            .inner{
+                p{
+                    font-size: 16px;
+                    font-weight: 300;
+                    letter-spacing: 0.5px;
+                }
+                h4{
+                    color: #ffffff;
+                    font-size: 30px;
+                    font-weight: 600;
+                
+                }
+                .portfolio-button{
+                    button{
+                        margin-top: 26px;
+                        transition: 0.7s;
+                        color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: none;
+    text-decoration: none;
+    padding: 0 23px;
+    height: 40px;
+    display: inline-block;
+    line-height: 34px;
+    border-radius: 4px;
+    font-size: 14px;
+    position: relative;
+    z-index: 2;
+    letter-spacing: 0.2px;
+    background: transparent;
+    &:hover{
+    background-color: red;
+    }
+                    }
+                }
+            }
+        }
+    }
+}
+
+}
