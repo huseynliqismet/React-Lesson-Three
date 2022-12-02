@@ -4,6 +4,7 @@ import  Pages from "../pages/Pages";
 import { Routes, Route } from "react-router-dom";
 import Layout from "../components/layout/Layout";
 import About from "../pages/About";
+import Aboutclassic from "../pages/Aboutclassic";
 const Routers = () => {
   return (
     <Layout>
@@ -11,7 +12,8 @@ const Routers = () => {
         <Route path="/" element={<Home />} />
         <Route path="/aboutme" element={<Aboutme />} />
         <Route path="/pages" element={<Pages />} />
-        <Route path="./about" element={<About />}/>
+        <Route path="/about" element={<About />}/>
+        <Route path="/aboutclassik" element={<Aboutclassic/>}/>
       </Routes>
     </Layout>
   );
